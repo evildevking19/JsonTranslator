@@ -1,0 +1,345 @@
+.full-width {
+    width: 100%;
+}
+.hidden {
+    display: none !important;
+}
+
+#admin-sidebar {
+    padding: 40px 25px;
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #191a1c;
+
+    #admin-logo {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .MuiMenuItem-root {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        background-color: #212426;
+        padding: 10px 20px;
+        border-radius: 3px;
+        &:hover,
+        &.active {
+            background-color: #33a68e;
+            transition: 0.5s;
+        }
+
+        .MuiListItemText-root {
+            text-align: left;
+        }
+        .MuiListItemIcon-root {
+            color: white;
+        }
+    }
+    .MuiMenuItem-root + .MuiMenuItem-root {
+        margin-top: 10px;
+    }
+}
+
+#admin-header {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #admin-header-actions {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        #admin-header-notification {
+            width: 35px;
+            height: 35px;
+        }
+        #admin-header-avatar {
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            border-radius: 100%;
+            background-color: #33a68e;
+        }
+        #admin-header-avatar img {
+            width: 100%;
+        }
+    }
+}
+
+#admin-page-section {
+    margin-left: 280px;
+    background-color: #212426;
+    min-height: 100vh;
+    padding: 40px;
+
+    p {
+        margin: 0;
+    }
+}
+
+#admin-main-content {
+    padding: 40px 0;
+}
+
+.tabs-setting .MuiButtonGroup-root .MuiButtonBase-root.active,
+.tabs-setting .MuiButtonGroup-root .MuiButtonBase-root:hover {
+    background-color: #33a68e;
+    border-radius: 5px;
+}
+.tabs-setting .MuiButtonGroup-root .MuiButtonBase-root {
+    border: 0;
+}
+
+.tab-contents {
+    padding: 40px 0;
+}
+.tab-content-section {
+    border-top: 1px solid white;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+#setting-password {
+    .form-group {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+    }
+    .form-group input {
+        padding: 5px 10px;
+        border: 1px solid white;
+        background-color: inherit;
+        border-radius: 5px;
+        min-width: 400px;
+        box-sizing: border-box;
+        color: white;
+        outline: 0;
+    }
+    #reset-password-actions {
+        justify-content: end;
+        gap: 20px;
+    }
+    .form-label {
+        min-width: 230px;
+        margin: 0;
+    }
+}
+
+#setting-profile {
+    .setting-subdes {
+        color: #ccc;
+    }
+    .input-common {
+        padding: 5px 10px;
+        border: 1px solid white;
+        background-color: inherit;
+        border-radius: 5px;
+        box-sizing: border-box;
+        color: white !important;
+        outline: 0;
+    }
+    .MuiInputBase-root {
+        color: white;
+    }
+    .form-group .MuiInputBase-input {
+        height: 33px;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-group.inline {
+        flex-direction: row;
+    }
+
+    .tab-content-section.profile-section {
+        // width: 800px;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .tab-content-section.profile-section .content-body {
+        padding: 25px 20px;
+    }
+    .tab-content-section.profile-section .content-footer {
+        padding: 15px 20px;
+        border-top: 1px solid white;
+        display: flex;
+        gap: 10px;
+        justify-content: end;
+    }
+    .profile-avatar-section {
+        display: flex;
+        gap: 20px;
+    }
+    .avatar-dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 15px;
+    }
+    .MuiFormControl-root p {
+        margin: 0;
+        border-right: 1px solid white;
+        color: white;
+        padding: 10px;
+        padding-right: 16px;
+    }
+    .MuiFormControl-root .MuiInputBase-root {
+        padding: 0;
+    }
+
+    #country-select input {
+        background-color: inherit;
+        color: white;
+    }
+    #country-select ul {
+        background-color: #212426;
+    }
+    #country-select ul li:hover {
+        background-color: #3d3d3d;
+    }
+    #timesone-select div {
+        color: white;
+    }
+    #timesone-select > div > div {
+        background-color: #212426;
+        color: white;
+        outline: 0;
+        border: 1px solid white !important;
+    }
+    #timesone-select > div > div:nth-child(4) > div > div {
+        background-color: #212426 !important;
+    }
+    #timesone-select > div > div:nth-child(4) > div > div:hover {
+        background-color: #1e2022 !important;
+    }
+    #timesone-select > div > div:hover {
+        border: 1px solid white !important;
+    }
+    #timesone-select ul li {
+        display: none !important;
+    }
+}
+.tab-content-section.common {
+    display: flex;
+    gap: 20px;
+}
+.tab-content-section.common .sub-about {
+    width: 320px;
+}
+.tab-content-section.common .sub-content {
+    flex-grow: 1;
+}
+#setting-team {
+    .input-invite {
+        padding: 5px 10px;
+        border: 1px solid white;
+        background-color: inherit;
+        border-radius: 5px;
+        box-sizing: border-box;
+        color: white;
+        outline: 0;
+        height: 40px;
+        background-color: #191a1c;
+    }
+    .invite-item {
+        margin-bottom: 10px;
+    }
+    .invite-item .invite-email {
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: #191a1c;
+        margin-right: 20px;
+        width: 300px;
+    }
+
+    .invite-item .invite-role {
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: #191a1c;
+        width: 150px;
+    }
+    .invite-item .MuiInputAdornment-root,
+    .invite-item .MuiInputBase-root {
+        color: white;
+    }
+    .invite-item .MuiInputBase-input {
+        width: 300px;
+        margin-right: 20px;
+        padding: 8.5px 14px;
+    }
+    .invite-item select {
+        width: 150px;
+    }
+    #invite-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}
+#setting-plan {
+    .plan-items img {
+        width: 48px;
+    }
+    .plan-items {
+        border: 1px solid white;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    #admin-sidebar {
+        width: 80px;
+        padding: 40px 15px;
+        .MuiMenuItem-root {
+            padding: 10px 14px;
+        }
+        .MuiListItemText-root {
+            display: none;
+        }
+    }
+    #admin-page-section {
+        margin-left: 80px;
+        padding: 40px 20px;
+    }
+
+    #setting-password .form-group {
+        flex-direction: column;
+    }
+
+    #setting-password .form-group input {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .tab-content-section.common {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tab-content-section.profile-section {
+        width: 800px;
+    }
+    
+}

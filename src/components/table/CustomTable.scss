@@ -1,0 +1,31 @@
+.custom-table {
+    width: 100%;
+    .MuiTableCell-root {
+        color: #eee;
+    } 
+
+    .MuiPaper-root {
+        background-color: #333;
+        // border: 1px solid white;
+        border-radius: 0;
+    }
+
+    .table-actions {
+        padding: 10px 0;
+    }
+
+    .MuiTableHead-root {
+        background-color: #33a68e;
+    }
+
+    .MuiTableBody-root {
+        
+        .MuiTableRow-root.even {
+            background-color: #191A1C;
+        }
+    }
+
+    .MuiTablePagination-root {
+        color: white;
+    }
+}

@@ -1,0 +1,45 @@
+.billing-table {
+    width: 100%;
+
+    .MuiPaper-root {
+        border: 1px solid white;
+        border-radius: 10px !important;
+        overflow: hidden;
+    }
+
+    .MuiTableCell-root {
+        color: #eee;
+    }
+
+    .MuiTableCell-root:not(.MuiTableCell-paddingNone) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    th.MuiTableCell-root {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .MuiPaper-root {
+        background-color: #333;
+        // border: 1px solid white;
+        border-radius: 0;
+    }
+
+    .table-actions {
+        padding: 10px 0;
+    }
+
+    .MuiTableHead-root {
+        background-color: #191a1c;
+    }
+
+    .MuiTableBody-root {
+        background-color: #212426;
+    }
+
+    .MuiTablePagination-root {
+        color: white;
+    }
+}
